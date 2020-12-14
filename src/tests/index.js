@@ -9,15 +9,18 @@
  * ------------------------------------
  */
 
-const { it, describe } = require('mocha')
+console.log('Running Unit Test')
 
-describe('Seminar Software Testing', function () {
-  it('Success', function (done) {
-    const flag = 5
-    if (flag === 5) {
-      done()
-    } else {
-      done(new Error('Failed.'))
-    }
+const { it, describe } = require('mocha')
+if (describe && it) {
+  describe('Seminar Software Testing', function () {
+    it('Success', function (done) {
+      const flag = 5
+      if (flag === 5) {
+        done()
+      } else {
+        done(new Error('Failed.'))
+      }
+    })
   })
-})
+}
