@@ -9,11 +9,12 @@
  * ------------------------------------
  */
 
-const mocha = require('mocha')
+const it = require('mocha').it
+const describe = require('mocha').describe
 
-console.log(mocha)
-mocha.describe('Seminar Software Testing', function () {
-  mocha.it('Success', function (done) {
+console.log({ describe, it })
+describe('Seminar Software Testing', function () {
+  it('Success', function (done) {
     const flag = 5
     if (flag === 5) {
       done()
