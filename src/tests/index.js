@@ -9,10 +9,8 @@
  * ------------------------------------
  */
 
-const it = require('mocha').it
-const describe = require('mocha').describe
+const { it, describe } = require('mocha')
 
-console.log({ describe, it })
 describe('Seminar Software Testing', function () {
   it('Success', function (done) {
     const flag = 5
