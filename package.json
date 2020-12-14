@@ -8,7 +8,8 @@
     "dev": "nodemon --exec npm-run-all --sequential eslint local",
     "local": "cross-env NODE_ENV=development babel-node --inspect=0.0.0.0:9227 src/server.js",
     "staging": "cross-env NODE_ENV=staging babel-node src/server.js",
-    "eslint": "eslint --format node_modules/eslint-friendly-formatter src/"
+    "eslint": "eslint --format node_modules/eslint-friendly-formatter src/",
+    "test": "mocha src/tests/index.js"
   },
   "repository": {
     "type": "git",
@@ -54,6 +55,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^8.2.1",
     "nodemon": "^2.0.3",
     "npm-run-all": "^4.1.5",
     "pre-commit": "^1.2.2"
