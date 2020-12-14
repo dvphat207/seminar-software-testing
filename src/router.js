@@ -25,7 +25,7 @@ const generateAPI = routes => {
 
 /** Application Router */
 const router = Router()
-router.use('/', (req, res) => res.send('Seminar Software Testing.'))
+router.use('/', (req, res) => res.send('Seminar Software Testing'))
 router.use('/api', generateAPI(routes.api))
 
 export default router
