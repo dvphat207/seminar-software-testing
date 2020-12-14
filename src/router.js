@@ -17,7 +17,7 @@ const generateAPI = routes => {
   const router = Router()
 
   for (const { method, path, handlers = [], controller } of routes) {
-    router[method](path, ...handlers, controller)
+    router[method.toLowerCase()](path, ...handlers, controller)
   }
 
   return router
@@ -25,6 +25,6 @@ const generateAPI = routes => {
 
 /** Application Router */
 const router = Router()
-router.use('/api', generateAPI(routes))
+router.use('/api', generateAPI(routes.api))
 
 export default router
