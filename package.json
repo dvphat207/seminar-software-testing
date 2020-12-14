@@ -10,9 +10,6 @@
     "staging": "cross-env NODE_ENV=staging babel-node src/server.js",
     "eslint": "eslint --format node_modules/eslint-friendly-formatter src/"
   },
-  "pre-commit": [
-    "eslint"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dvphat207/seminar-software-testing.git"
