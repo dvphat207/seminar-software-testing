@@ -20,6 +20,7 @@ import config from 'config'
  * @returns {Server} server
  */
 const createServer = async app => {
+  let x
   /* Listen for connections */
   const port = config.get('connection.port')
   return app.listen(port, () =>
